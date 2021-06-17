@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/My Passport/APPLEDEV/APPLEDEV/APPLEDEV/APPLEDEV.csproj": {}
+    "D:\\APPdev\\course.iosAppDevelop\\APPLEDEV\\APPLEDEV.csproj": {}
   },
   "projects": {
-    "/Volumes/My Passport/APPLEDEV/APPLEDEV/APPLEDEV/APPLEDEV.csproj": {
+    "D:\\APPdev\\course.iosAppDevelop\\APPLEDEV\\APPLEDEV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/My Passport/APPLEDEV/APPLEDEV/APPLEDEV/APPLEDEV.csproj",
+        "projectUniqueName": "D:\\APPdev\\course.iosAppDevelop\\APPLEDEV\\APPLEDEV.csproj",
         "projectName": "APPLEDEV",
-        "projectPath": "/Volumes/My Passport/APPLEDEV/APPLEDEV/APPLEDEV/APPLEDEV.csproj",
-        "packagesPath": "/Users/ris/.nuget/packages/",
-        "outputPath": "/Volumes/My Passport/APPLEDEV/APPLEDEV/APPLEDEV/obj/",
+        "projectPath": "D:\\APPdev\\course.iosAppDevelop\\APPLEDEV\\APPLEDEV.csproj",
+        "packagesPath": "C:\\Users\\tj_lty\\.nuget\\packages\\",
+        "outputPath": "D:\\APPdev\\course.iosAppDevelop\\APPLEDEV\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ris/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tj_lty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/ris/.dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

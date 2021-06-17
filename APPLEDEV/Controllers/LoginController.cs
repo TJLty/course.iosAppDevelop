@@ -16,10 +16,11 @@ namespace APPLEDEV.Controllers
     {
         //POST /api/Login
         [HttpPost]
-        public LoginResponse Login([FromBody]LoginRequest req)
+        public LoginResponse Login([FromBody] LoginRequest req)
         {
             var resp = new LoginResponse();
-            try{
+            try
+            {
                 if (LoginCheck(req.Username, req.Password))
                 {
                     resp.Status = 1;
@@ -31,16 +32,17 @@ namespace APPLEDEV.Controllers
                     resp.Token = "fail";
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine("bad");
             }
+
             return resp;
         }
 
         private bool LoginCheck(string username, string password)
         {
-            bool resp=true;
+            bool resp = true;
             string Strconn =
                 "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=220.179.227.205)(PORT=6001)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ORCL)));" +
                 "User Id=C##APPLEDEV;" +
@@ -56,12 +58,13 @@ namespace APPLEDEV.Controllers
             {
                 resp = false;
             }
+
             oraReader.Dispose();
             conn.Close();
             return resp;
         }
     }
-    
+
     [Route("api/[controller]")]
     [ApiController]
     public class TestController : Controller

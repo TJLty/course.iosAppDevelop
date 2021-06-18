@@ -34,15 +34,16 @@ namespace APPLEDEV.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("bad");
+                Console.WriteLine(ex);
             }
-
             return resp;
         }
 
         private bool LoginCheck(string username, string password)
         {
             bool resp = true;
+            if (username == "" || password == "")
+                return false;
             string Strconn =
                 "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=220.179.227.205)(PORT=6001)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ORCL)));" +
                 "User Id=C##APPLEDEV;" +
@@ -51,14 +52,13 @@ namespace APPLEDEV.Controllers
             conn.Open();
             var strSql = "select \"password_hash\" " +
                          "from \"RoomMember\" " +
-                         "where \"username\"=" + username;
+                         "where \"username\"='" + username+"'";
             OracleCommand oraCmd = new(strSql, conn);
             var oraReader = oraCmd.ExecuteReader();
             if (!oraReader.Read() || oraReader.GetString(0) != password)
             {
                 resp = false;
             }
-
             oraReader.Dispose();
             conn.Close();
             return resp;

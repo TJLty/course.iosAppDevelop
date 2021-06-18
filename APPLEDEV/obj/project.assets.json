@@ -1202,26 +1202,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tj_lty\\.nuget\\packages\\": {}
+    "/Users/ris/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\APPdev\\course.iosAppDevelop\\APPLEDEV\\APPLEDEV.csproj",
+      "projectUniqueName": "/Volumes/My Passport/APPLEDEV/APPLEDEV/APPLEDEV/APPLEDEV.csproj",
       "projectName": "APPLEDEV",
-      "projectPath": "D:\\APPdev\\course.iosAppDevelop\\APPLEDEV\\APPLEDEV.csproj",
-      "packagesPath": "C:\\Users\\tj_lty\\.nuget\\packages\\",
-      "outputPath": "D:\\APPdev\\course.iosAppDevelop\\APPLEDEV\\obj\\",
+      "projectPath": "/Volumes/My Passport/APPLEDEV/APPLEDEV/APPLEDEV/APPLEDEV.csproj",
+      "packagesPath": "/Users/ris/.nuget/packages/",
+      "outputPath": "/Volumes/My Passport/APPLEDEV/APPLEDEV/APPLEDEV/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tj_lty\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/ris/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1271,7 +1269,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/ris/.dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }
